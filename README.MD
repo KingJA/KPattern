@@ -1,6 +1,6 @@
 |创建型模式(6)||||||
 |---|---|---|---|---|---|
-|[单例模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/singleton/SingleTon.md)|[简单工厂模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/simplefactory/SimpleFactory.md)|[工厂方法模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/factorymethod/FactoryMethod.md)|[抽象工厂方法](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/abstractfactory/AbstractFactory.md)|[原型模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/prototype/Prototype.md) |[建造者模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/builder/Builder.md)|
+|[单例模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/singleton/SingleTon.md)|[简单工厂模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/simplefactory/SimpleFactory.md)|[工厂方法模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/factorymethod/FactoryMethod.md)|[抽象工厂方法](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/abstractfactory/AbstractFactory.md)|[原型模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/prototype/Prototype.md) |[建造者模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/builder/Builder.md)|
 
 |结构性模式(7)|||||||
 |---|---|---|---|---|---|---|
