@@ -8,7 +8,11 @@ package com.pattern.creational.singleton;
  */
 public class SingleTonTest {
     public static void main(String[] args) {
-        System.out.println(SingleTon.getInstance().hashCode());
-        System.out.println(SingleTon.getInstance().hashCode());
+        System.out.println("LazySingleton: "+LazySingleton.getInstance().hashCode());
+        System.out.println("LazySingleton: "+LazySingleton.getInstance().hashCode());
+        System.out.println("EagerSingleton: "+EagerSingleton.getInstance().hashCode());
+        System.out.println("EagerSingleton: "+EagerSingleton.getInstance().hashCode());
+        System.out.println("InnerClassSingleton: "+InnerClassSingleton.getInstance().hashCode());
+        System.out.println("InnerClassSingleton: "+InnerClassSingleton.getInstance().hashCode());
     }
 }
