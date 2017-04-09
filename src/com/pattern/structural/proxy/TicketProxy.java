@@ -7,13 +7,14 @@ package com.pattern.structural.proxy;
  * Email:kingjavip@gmail.com
  */
 public class TicketProxy implements TicketSeller{
+
     @Override
-    public void sellTrainTicket() {
-        System.out.println("销售火车票");
+    public void sellTrainTicket(int a, int b) {
+        System.out.println("a="+a+"b="+b);
     }
 
     @Override
-    public void sellCarTicket() {
-        System.out.println("销售汽车票");
+    public void sellCarTicket(String s) {
+        System.out.println("s="+s);
     }
 }

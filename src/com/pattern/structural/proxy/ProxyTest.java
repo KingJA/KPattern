@@ -12,7 +12,7 @@ public class ProxyTest {
     public static void main(String[] args) {
         LogInvocationHandler logInvocationHandler = new LogInvocationHandler(new TicketProxy());
         TicketSeller ticketProxy =(TicketSeller) Proxy.newProxyInstance(TicketProxy.class.getClassLoader(), TicketProxy.class.getInterfaces(), logInvocationHandler);
-        ticketProxy.sellCarTicket();
-        ticketProxy.sellTrainTicket();
+        ticketProxy.sellCarTicket("msg");
+        ticketProxy.sellTrainTicket(2,3);
     }
 }

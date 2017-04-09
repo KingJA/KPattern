@@ -7,6 +7,6 @@ package com.pattern.structural.proxy;
  * Email:kingjavip@gmail.com
  */
 public interface TicketSeller {
-    void sellTrainTicket();
-    void sellCarTicket();
+    void sellTrainTicket(int a,int b);
+    void sellCarTicket(String s);
 }

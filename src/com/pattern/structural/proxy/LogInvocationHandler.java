@@ -16,10 +16,24 @@ public class LogInvocationHandler implements InvocationHandler {
         this.target = target;
     }
 
+    /**
+     *
+     * @param proxy 代理类的对象
+     * @param method 代理类的方法
+     * @param args 代理方法的参数数组
+     * @return
+     * @throws Throwable
+     */
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("代理开始>>>");
         Object obj = method.invoke(target, args);
+        if (args!=null&&args.length > 0) {
+            for (Object arg : args) {
+                System.out.println(method.getName()+"方法参数:"+arg);
+            }
+        }
+
         System.out.println("代理结束>>>");
         return obj;
     }
