@@ -10,7 +10,7 @@ public class Person {
     private int age;
     private String name;
 
-    public int getAge() {
+    private int getAge() {
         return age;
     }
 
@@ -31,7 +31,7 @@ public class Person {
         this.name = builder.name;
     }
 
-    public static class Builder {
+     static class Builder {
         private int age;
         private String name;
 
@@ -39,6 +39,7 @@ public class Person {
             this.age = age;
             return this;
         }
+
 
         public Builder setName(String name) {
             this.name = name;
