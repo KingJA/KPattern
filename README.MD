@@ -1,10 +1,22 @@
+    创见性模式关注对象的创建过程，奖对象和创建和使用分离，在使用对象时无须关心
+    对象的创建希捷，从而降低了系统的耦合度，让设计方案更于修改和扩展。
+
 |创建型模式(6)||||||
 |---|---|---|---|---|---|
 |[单例模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/singleton/SingleTon.md)|[简单工厂模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/simplefactory/SimpleFactory.md)|[工厂方法模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/factorymethod/FactoryMethod.md)|[抽象工厂方法](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/abstractfactory/AbstractFactory.md)|[原型模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/prototype/Prototype.md) |[建造者模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/builder/Builder.md)|
 
+
+
+    结构性模式关注如何将现有类和对象组织在一起形成更强大的结构。不同的结构性
+    模式从不同的角度来组合类和对象，在尽可能满足各种面向对象原则的同时，为
+    类或对象的组合提供一系列巧妙的解决方案。
 |结构性模式(7)|||||||
 |---|---|---|---|---|---|---|
 |适配器模式|桥接模式|组合模式|装饰模式|外观模式|享元模式|代理模式|
+
+
+
+
 
 |行为性模式(11)|||||||
 |---|---|---|---|---|---|---|
