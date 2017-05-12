@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #787878;
+        }
+
+        #tab {
+            margin-top: 0px;
+            padding: 0;
+        }
+
+        #tab li {
+            list-style-type: none;
+            float: left;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: green;
+            color: white;
+            font-weight: bolder;
+            border: solid white 1px;
+        }
+
+        #content {
+            width: 350px;
+            height: 300px;
+            background-color: floralwhite;
+            position: relative;
+            left: 0px;
+            top: 50px;
+
+        }
+
+        #content ul {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            height: 200px;
+            width: 52px;
+            left: 250px;
+            display: none;
+
+        }
+
+        #content li {
+            list-style-type: none;
+            width: 50px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: burlywood;
+            color: white;
+            border: solid white 1px;
+            margin-top: 15px;
+
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border: dotted dimgray 5px;
+            position: absolute;
+            left: 10px;
+            top: 15px;
+        }
+
+
+    </style>
+
+    <script>
+        window.onload = function () {
+            var src = ['img/1.jpg', 'img/2.jpg', 'img/3.jpg', 'img/4.jpg', 'img/5.jpg', 'img/6.jpg', 'img/7.jpg'];
+            var Ul_Tab = document.getElementById("tab");
+            var li_tab = Ul_Tab.getElementsByTagName("li");
+
+            var div_content = document.getElementById("content");
+            var img = div_content.getElementsByTagName("img")[0];
+            var oul = div_content.getElementsByTagName("ul");
+            var li = div_content.getElementsByTagName("li");
+            var currentPosition = 0;
+
+
+            /**
+             * 显示oul
+             */
+
+            function initEvent() {
+                for (var i = 0; i < li_tab.length; i++) {
+                    li_tab[i].index = i;
+                    li_tab[i].onclick = function () {
+                        for (var i = 0; i < li_tab.length; i++) {
+                            oul[i].style.display = "none";
+                        }
+                        oul[this.index].style.display = "block";
+                    };
+                }
+            }
+
+            function onSwitch() {
+                currentPosition = currentPosition + 1;
+                li_tab[currentPosition % li_tab.length].click();
+            }
+
+            initEvent();
+            setInterval(onSwitch, 1000);
+
+
+            /**
+             * 显示img
+             */
+            function imgDisplay() {
+                for (var n = 0; n < li.length; n++) {
+                    (function (n) {
+                        li[n].onclick = function () {
+                            //console.log(n);
+                            img.src = src[n];
+
+                        }
+                    })(n);
+                }
+            }
+
+
+        }
+
+
+    </script>
+</head>
+<body>
+<ul id="tab">
+    <li>
+        <span>模块一</span>
+    </li>
+
+    <li>
+        <span>模块二</span>
+    </li>
+</ul>
+
+<div id="content">
+    <img src="img/1.jpg">
+    <ul>
+        <li>img1</li>
+        <li>img2</li>
+        <li>img3</li>
+    </ul>
+
+    <ul>
+        <li>img4</li>
+        <li>img5</li>
+        <li>img6</li>
+        <li>img7</li>
+    </ul>
+</div>
+</body>
+</html>
