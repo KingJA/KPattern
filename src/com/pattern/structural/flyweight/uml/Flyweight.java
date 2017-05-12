@@ -8,6 +8,4 @@ package com.pattern.structural.flyweight.uml;
  */
 public interface Flyweight {
     void operation();
-
-    void setState(String extrinsicState);
 }

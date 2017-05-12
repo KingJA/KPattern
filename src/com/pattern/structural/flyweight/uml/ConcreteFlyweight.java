@@ -17,8 +17,4 @@ public class ConcreteFlyweight implements Flyweight {
     public void operation() {
         System.out.println("operation:"+extrinsicState);
     }
-    @Override
-    public void setState(String extrinsicState) {
-        this.extrinsicState = extrinsicState;
-    }
 }

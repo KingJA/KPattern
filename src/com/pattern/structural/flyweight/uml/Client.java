@@ -17,9 +17,5 @@ public class Client {
         flyweight3.operation();
         System.out.println(flyweightFactory.getFlyweightSize());
 
-        flyweight1.setState("小强");
-        flyweightFactory.getFlyweight("小白").operation();
-        Flyweight flyweight4 = flyweightFactory.getFlyweight("小白");
-        flyweight4.operation();
     }
 }
