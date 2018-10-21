@@ -2,6 +2,7 @@ package com.pattern.structural.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
 
 /**
  * Description：TODO
@@ -36,5 +37,10 @@ public class LogInvocationHandler implements InvocationHandler {
 
         System.out.println("代理结束>>>");
         return obj;
+    }
+
+    public Object bind() {
+        Class<?> clazz = target.getClass();
+        return Proxy.newProxyInstance(clazz.getClassLoader(),clazz.getInterfaces(), this);
     }
 }

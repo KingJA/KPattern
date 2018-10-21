@@ -11,7 +11,11 @@ import java.lang.reflect.Proxy;
 public class ProxyTest {
     public static void main(String[] args) {
         LogInvocationHandler logInvocationHandler = new LogInvocationHandler(new TicketProxy());
-        TicketSeller ticketProxy =(TicketSeller) Proxy.newProxyInstance(TicketProxy.class.getClassLoader(), TicketProxy.class.getInterfaces(), logInvocationHandler);
+//        TicketSeller ticketProxy =(TicketSeller) Proxy.newProxyInstance(TicketProxy.class.getClassLoader(), TicketProxy.class.getInterfaces(), logInvocationHandler);
+
+        TicketSeller ticketProxy = (TicketSeller) logInvocationHandler.bind();
+
+
         ticketProxy.sellCarTicket("msg");
         ticketProxy.sellTrainTicket(2,3);
     }
