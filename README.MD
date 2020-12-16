@@ -12,9 +12,7 @@
     类或对象的组合提供一系列巧妙的解决方案。
 |结构性模式(7)|||||||
 |---|---|---|---|---|---|---|
-|适配器模式|[代理模式](https://github.com/KingJA/KPattern/blob/master/src/main/java/com/pattern/structural/adapter/adapter.md)|
-
-
+|适配器模式|桥接模式|组合模式|装饰模式|外观模式|享元模式|代理模式|
 
 
 
