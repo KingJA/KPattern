@@ -3,8 +3,9 @@
 
 |创建型模式(6)||||||
 |---|---|---|---|---|---|
-|[单例模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/singleton/SingleTon.md)|[简单工厂模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/simplefactory/SimpleFactory.md)|[工厂方法模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/factorymethod/FactoryMethod.md)|[抽象工厂方法](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/abstractfactory/AbstractFactory.md)|[原型模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/prototype/Prototype.md) |[建造者模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/creational/builder/Builder.md)|
+|单例模式|简单工厂模式|工厂方法模式|抽象工厂方法|原型模式|建造者模式|
 
+https://github.com/KingJA/KPattern/blob/master/src/main/java/com/pattern/creational/singleton/SingleTon.md
 
 
     结构性模式关注如何将现有类和对象组织在一起形成更强大的结构。不同的结构性
@@ -12,7 +13,13 @@
     类或对象的组合提供一系列巧妙的解决方案。
 |结构性模式(7)|||||||
 |---|---|---|---|---|---|---|
-|[适配器模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/structural/adapter/adapter.md)|桥接模式|组合模式|装饰模式|外观模式|享元模式|代理模式|
+|[适配器模式](https://github.com/KingJA/KPattern/blob/master/src/com/pattern/structural/adapter/adapter.md)
+|桥接模式
+|组合模式
+|装饰模式
+|外观模式
+|享元模式
+|[代理模式](https://github.com/KingJA/KPattern/blob/master/src/main/java/com/pattern/structural/adapter/adapter.md)|
 
 
 
